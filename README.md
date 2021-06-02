@@ -1,27 +1,27 @@
-# EasyGene
+## EasyGene: Online Sequence Transcriber and Translator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+### Background:
 
-## Development server
+    Bioinformatics applications offer robust tools for analysing genetic information. However, many of these applications are
+difficult to use. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Goals:
 
-## Code scaffolding
+    This application aims to provide a user-friendly web frontend for running simple genetic analysis tasks. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Audience:
 
-## Build
+    This project targets researchers and students of biology and bioinformatics. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Requirements:
 
-## Running unit tests
+    Users will be able to:
+    	  1. Submit DNA sequence information and transcribe or translate those sequences into:
+	     - mRNA sequences
+	     - Amino acid sequences
+	  2. Authenticate using a username and password
+	  3. Review previously submitted:
+	     - original sequences
+	     - transcriptions
+	     - translations
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
