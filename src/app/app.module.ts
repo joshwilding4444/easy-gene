@@ -8,6 +8,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { InputFormComponent } from './input-form/input-form.component';
 import { ResultsComponent } from './results/results.component';
+import { CookieService } from 'ngx-cookie-service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,10 @@ import { ResultsComponent } from './results/results.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientTestingModule
+    HttpClientTestingModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
