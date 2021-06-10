@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../authentication.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { UserInfo } from '../user-info';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +18,7 @@ export class LoginComponent implements OnInit {
     password: new FormControl('', Validators.required)
   });
 
-  constructor(private service: AuthenticationService) { }
+  constructor(private service: AuthenticationService, private router: Router) { }
 
   ngOnInit(): void {
     this.loginForm = new FormGroup({
@@ -39,5 +40,6 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     this.authenticate(this.loginForm.value.username, this.loginForm.value.password);
+    this.router.navigate(['/sequences']);
   }
 }
