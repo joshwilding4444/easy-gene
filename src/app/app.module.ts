@@ -10,6 +10,8 @@ import { InputFormComponent } from './input-form/input-form.component';
 import { ResultsComponent } from './results/results.component';
 import { CookieService } from 'ngx-cookie-service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
+    RouterTestingModule,
     HttpClientModule,
     HttpClientTestingModule,
     ReactiveFormsModule

@@ -28,12 +28,11 @@ export class LoginComponent implements OnInit {
 
   authenticate(username:string, password:string) {
     let submittedUser = new UserInfo(username, password);
-    console.log("Login attempted using: " + username);
     this.service.authenticate(submittedUser).subscribe(
       result => {
-        console.log("log in result: " + result);
         this.isLoggedIn = result;
         sessionStorage.setItem("isLoggedIn", this.isLoggedIn.toString());
+        sessionStorage.setItem("username", username);
       }
     );
   }
