@@ -1,0 +1,11 @@
+<form (submit)="onSubmit()" [formGroup]="loginForm">
+    <label for="username">
+        username:
+    </label>
+    <input type="text" name="username" formControlName="username">
+    <label for="userPassword">
+        password:
+    </label>
+    <input type="password" name="userPassword" formControlName="password">
+    <button type="submit">Log in</button>
+</form>
