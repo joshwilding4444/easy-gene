@@ -8,17 +8,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { InputFormComponent } from './input-form/input-form.component';
 import { ResultsComponent } from './results/results.component';
-import { CookieService } from 'ngx-cookie-service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
+import { MyresultsComponent } from './myresults/myresults.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     InputFormComponent,
-    ResultsComponent
+    ResultsComponent,
+    MyresultsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +30,7 @@ import { RouterTestingModule } from '@angular/router/testing';
     HttpClientTestingModule,
     ReactiveFormsModule
   ],
-  providers: [CookieService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

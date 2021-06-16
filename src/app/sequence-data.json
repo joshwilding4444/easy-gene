@@ -1,0 +1,29 @@
+{
+    "results": [
+        {
+            "id": 1,
+            "templateSequence": "AAAAAA",
+            "resultSequence": "UUUUUU",
+            "username": "birdperson"
+        },
+        {
+            "id": 2,
+            "templateSequence": "AUGAUG",
+            "resultSequence": "MM",
+            "username": "catperson"
+        },
+        {
+            "id": 3,
+            "templateSequence": "GCCCCG",
+            "resultSequence": "CGGGGC",
+            "username": "dogperson"
+        },
+        {
+            "id": 4,
+            "templateSequence": "TACTAC",
+            "resultSequence": "AUGAUG",
+            "username": "birdperson"
+        }
+    
+    ]
+}

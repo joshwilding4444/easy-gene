@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
 import { InputFormComponent } from './input-form/input-form.component';
 import { LoginComponent } from './login/login.component';
+import { MyresultsComponent } from './myresults/myresults.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
-  { path: 'sequences', component: InputFormComponent, canActivate: [AuthGuard] }
+  { path: 'myresults', component: MyresultsComponent },
+  { path: 'sequences', component: InputFormComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full' }
 ];
 
 @NgModule({
